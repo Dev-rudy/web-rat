@@ -83,8 +83,8 @@ background: linear-gradient(126deg, rgba(1,130,234,1) 38%, rgba(130,1,255,1) 66%
  
  
  
- html{width:100vw;height:100vh;background:black;transition-duration:2s;cursor:url('cursor.png'),auto;}
-  body{width:100%;height:100%; cursor:url('cursor.png'),auto;}
+ html{width:100vw;height:100vh;background:black;transition-duration:2s;}
+  body{width:100%;height:100%; }
 *{box-sizing:border-box;padding:0px;margin:0px;overflow:hidden;overflow-y:auto;}
 
 

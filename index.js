@@ -93,7 +93,7 @@ const galeryStrip=['url("w01.png")','url("w02.png")','url("w03.png")','url("w04.
 				   
 for (let i = 0; i < galery.length; i++) {
     galery[i].style.backgroundImage=galeryStrip[i]
-		      console.log(galeryStrip);};
+		      };
 			  
 			  
         window.onload = function() {
