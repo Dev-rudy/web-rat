@@ -305,3 +305,15 @@ display:grid;grid-template-columns:repeat(4,1fr);padding:2vw;gap:1vw;}
 .page6-header{width:70vw;height:15vh;position:absolute;top:1vh;z-index:6;background-image:url("sites.png");background-position:center;background-size:100%;background-repeat:no-repeat;}
 .content-conts{border:5px outset red;background-image:url("comingsoon.png");background-position:center;background-size:100%;background-repeat:no-repeat;
 width:15vw;height:30vh;}
+
+.portrait{display:none;width:100%;height:100%;background: rgb(1,130,234);
+background: linear-gradient(163deg, rgba(1,130,234,1) 38%, rgba(130,1,255,1) 66%);}
+.notice{position:absolute;top:40vh;left:10vw;width:80vw;height:40vh;z-index:5;color:white;font-weight:bold;text-align:center; font-family: "New Amsterdam", sans-serif;font-size:1.5rem;
+background: rgb(1,130,234);
+background: linear-gradient(163deg, rgba(1,130,234,0.5543009440104167) 38%, rgba(130,1,255,0.5346931008731617) 66%);border-radius:3vw;overflow:auto;}
+.na{width:100%;height:100%;background-image:url("na.png");background-position:center;background-size:cover;background-repeat:no-repeat;}
+@media(orientation:portrait){.content-wrapper{display:none;}
+                             .portrait{display:block}
+							 .navigation{display:none;}
+							 .loader{display:none;}
+							 }
