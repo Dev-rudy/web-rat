@@ -78,7 +78,34 @@ const sitemapWrapper=document.querySelector(".sitemap-wrapper");
 const siteMap=document.querySelector(".sitemap")
 siteMap.addEventListener("mouseover",function(){sitemapWrapper.style.display="block";})
                                                                                          
-siteMap.addEventListener("mouseout",function(){sitemapWrapper.style.display="none";})																					 												  
+siteMap.addEventListener("mouseout",function(){sitemapWrapper.style.display="none";})	
+
+
+const galbtn=document.querySelector(".galery-btn");
+const xt3=document.querySelector(".exit3");		
+const galcont=document.querySelector(".galery-container");	
+galbtn.addEventListener("click",function(){galcont.style.display="block"})	
+xt3.addEventListener("click",function(){galcont.style.display="none"})	
+
+
+const helpDetails=document.querySelector(".help-details");
+const pageSevenHelp=document.querySelector(".help7");
+pageSevenHelp.addEventListener("mouseover",function(){helpDetails.style.width="50vw",
+                                                   helpDetails.style.height="30vh"})
+pageSevenHelp.addEventListener("mouseout",function(){helpDetails.style.width="0vw",
+                                                   helpDetails.style.height="0vh"})												   
+helpDetails.addEventListener("mouseover",function(){helpDetails.style.width="50vw",
+                                                   helpDetails.style.height="30vh"})												   
+helpDetails.addEventListener("mouseout",function(){helpDetails.style.width="0vw",
+                                                   helpDetails.style.height="0vh"})
+
+
+const imagez=document.querySelectorAll(".imagz");	
+const imgz=[//'url("wow.png")',
+            ]	;// this  is  the galery  content link dump		
+
+for(let i=0;i<imagez.length;i++){imagez[i].style.backgroundImage=imgz[i];
+console.log(imagez.length);}			
 /*---------------------------------------------------*/
 /*-const galeryButton=document.querySelectorAll(".galery");
 const galeryOne=document.querySelector(".galery1");
@@ -99,7 +126,8 @@ for (let i = 0; i < galery.length; i++) {
         window.onload = function() {
             setTimeout(function() {
                 document.querySelector('.loader').style.display = 'none';
-            }, 5000); // Hide after 5 seconds (5000 milliseconds)
+				 if (loader.style.display !== 'none') { alert('The loader is taking longer than expected. Please restart your browser.');}
+            }, 1000); // Hide after 5 seconds (5000 milliseconds)
 			console.log("loader closed")
         };/*-----code from copilot---------*/
 			  
