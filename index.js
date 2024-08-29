@@ -100,6 +100,37 @@ helpDetails.addEventListener("mouseout",function(){helpDetails.style.width="0vw"
                                                    helpDetails.style.height="0vh"})
 
 
+
+
+
+
+const langOne=document.querySelector("#lang1");
+const langTwo=document.querySelector("#lang2");
+const langThree=document.querySelector("#lang3");
+const vidsCont1=document.querySelector("#video-containers1");
+const vidsCont2=document.querySelector("#video-containers2");
+const vidsCont3=document.querySelector("#video-containers3");
+
+
+langOne.addEventListener("click",function(){
+	vidsCont1.style.boxShadow="1px 1px 5px 5px white";vidsCont1.style.zIndex="3";
+	vidsCont2.style.boxShadow="none";vidsCont2.style.zIndex="2"
+	vidsCont3.style.boxShadow="none";vidsCont3.style.zIndex="2"
+});
+langTwo.addEventListener("click",function(){
+	vidsCont1.style.boxShadow="none";vidsCont1.style.zIndex="2";
+	vidsCont2.style.boxShadow="1px 1px 5px 5px white";vidsCont2.style.zIndex="3"
+	vidsCont3.style.boxShadow="none";vidsCont3.style.zIndex="2"
+});
+langThree.addEventListener("click",function(){
+	vidsCont1.style.boxShadow="none";vidsCont1.style.zIndex="2";
+	vidsCont2.style.boxShadow="none";vidsCont2.style.zIndex="2"
+	vidsCont3.style.boxShadow="1px 1px 5px 5px white";vidsCont3.style.zIndex="3"
+});
+
+
+
+
 const imagez=document.querySelectorAll(".imagz");	
 const imgz=[//'url("wow.png")',
             ]	;// this  is  the galery  content link dump		
@@ -125,7 +156,7 @@ for (let i = 0; i < galery.length; i++) {
 			  
         window.onload = function() {
             setTimeout(function() {
-                document.querySelector('.loader').style.display = 'none';
+         const loader=document.querySelector('.loader').style.display = 'none';
 				 if (loader.style.display !== 'none') { alert('The loader is taking longer than expected. Please restart your browser.');}
             }, 1000); // Hide after 5 seconds (5000 milliseconds)
 			console.log("loader closed")
